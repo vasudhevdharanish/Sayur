@@ -2,7 +2,8 @@ import java.util.Scanner;
 import java.io.Console;
 import java.io.*;;
 import java.util.StringTokenizer;
-public class Main{
+//problem 1
+public class Exercise1{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the sentence:");
