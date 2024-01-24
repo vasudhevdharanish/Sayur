@@ -1,12 +1,13 @@
 import java.util.Scanner;
 import java.io.Console;
-
-
+import java.io.*;;
+import java.util.StringTokenizer;
 public class Main{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the sentence:");
         String sentence = sc.nextLine();
-       ntence, " ");
+        StringTokenizer tk = new StringTokenizer(sentence, " ");
         int word_count=0;
         int key;
         System.out.println("Enter the key value:");
