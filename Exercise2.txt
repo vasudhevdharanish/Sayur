@@ -1,0 +1,41 @@
+public class InstaPost {
+
+    private ArrayList<String> tags;
+    private int shares;
+    private int likes;
+    private ArrayList<String> comments;
+
+    public InstaPost(int shares, String[] tag) {
+        tags=new ArrayList<String>(tag);
+        this.shares = shares;
+        this.likes = 0;
+        this.comments = new ArrayList<String>();
+    }
+
+    public void addLike() {
+        likes++;
+    }
+
+    public void addComment(String comment) {
+        comments.add(comment);
+    }
+
+    public void displayPostDetails() {
+        System.out.println("Tags: " + tags);
+        System.out.println("Shares: " + shares);
+        System.out.println("Likes: " + likes);
+        System.out.println("Comments: " + comments);
+    }
+
+}
+
+SQL INSTRUCTIONS:
+
+1.SELECT name FROM student WHERE city = 'MAA';
+2.SELECT COUNT(*) FROM student WHERE city = 'TRI';
+
+3.SELECT city, COUNT(*) FROM student GROUP BY city;
+4,SELECT AVG(age) FROM student;
+
+
+
